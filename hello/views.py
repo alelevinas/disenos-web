@@ -27,3 +27,5 @@ def db(request):
 def d1(request):
 	return render(request, 'd1/d1Template.html')
 
+def d2(request):
+	return render(request, 'd2.html')
