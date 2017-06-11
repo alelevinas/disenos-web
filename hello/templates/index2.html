@@ -1,8 +1,12 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html>
 <title>Diseños web - Alejandro Levinas (w3.css)</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="{% static 'blue-anchor-md.png' %}">
+<link rel="shortcut icon" href="favicon.ico" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
@@ -27,37 +31,37 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     	<ul class="w3-ul" style="width:50%">
   			<li>
             	<div class="w3-btn w3-green w3-hover-shadow w3-center" style="width:100%">
-    				<h3><a href="{% url 'hello.views.d1' %}#">Ver diseño 1 </a></h3> 
+    				<h3><a target="_newtab" href="{% url 'hello.views.d1' %}#">Ver diseño 1 </a></h3> 
   	  			</div>
             </li>
             <li>
             	<div class="w3-btn w3-green w3-hover-shadow  w3-center" style="width:100%">
-    				<h3><a href="{% url 'hello.views.d2' %}#">Ver diseño 2 </a></h3> 
+    				<h3><a target="_newtab" href="{% url 'hello.views.d2' %}#">Ver diseño 2 </a></h3> 
   	  			</div>
             </li>
             <li>
             	<div class="w3-btn w3-green w3-hover-shadow  w3-center" style="width:100%">
-    				<h3><a href="{% url 'hello.views.d3' %}#">Ver diseño 3 </a></h3> 
+    				<h3><a target="_newtab" href="{% url 'hello.views.d3' %}#">Ver diseño 3 </a></h3> 
   	  			</div>
             </li>
             <li>
             	<div class="w3-btn w3-green w3-hover-shadow  w3-center" style="width:100%">
-    				<h3><a href="{% url 'hello.views.d4' %}#">Ver diseño 4 </a></h3> 
+    				<h3><a target="_newtab" href="{% url 'hello.views.d4' %}#">Ver diseño 4 </a></h3> 
   	  			</div>
             </li>
             <li>
             	<div class="w3-btn w3-green w3-hover-shadow  w3-center" style="width:100%">
-    				<h3><a href="{% url 'hello.views.d5' %}#">Ver diseño 5 </a></h3> 
+    				<h3><a target="_newtab" href="{% url 'hello.views.d5' %}#">Ver diseño 5 </a></h3> 
   	  			</div>
             </li>
             <li>
             	<div class="w3-btn w3-green w3-hover-shadow  w3-center" style="width:100%">
-    				<h3><a href="{% url 'hello.views.d6' %}#">Ver diseño 6 </a></h3> 
+    				<h3><a target="_newtab" href="{% url 'hello.views.d6' %}#">Ver diseño 6 </a></h3> 
   	  			</div>
             </li>
             <li>
             	<div class="w3-btn w3-green w3-hover-shadow  w3-center" style="width:100%">
-    				<h3><a href="{% url 'hello.views.d7' %}#">Ver diseño 7 </a></h3> 
+    				<h3><a target="_newtab" href="{% url 'hello.views.d7' %}#">Ver diseño 7 </a></h3> 
   	  			</div>
             </li>
     </div>
