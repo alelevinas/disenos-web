@@ -41,3 +41,6 @@ def d5(request):
 	
 def d6(request):
 	return render(request, 'd6.html')
+
+def d7(request):
+	return render(request, 'd7.html')
