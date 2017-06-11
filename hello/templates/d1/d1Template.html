@@ -32,16 +32,16 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card-2">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
-    <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
-    <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <a href="{% url 'hello.views.d1' %}#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="{% url 'hello.views.d1' %}#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
+    <a href="{% url 'hello.views.d1' %}#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
+    <a href="{% url 'hello.views.d1' %}#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
     <div class="w3-dropdown-hover w3-hide-small">
       <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm#" class="w3-bar-item w3-button">Merchandise</a>
-        <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm#" class="w3-bar-item w3-button">Extras</a>
-        <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm#" class="w3-bar-item w3-button">Media</a>
+        <a href="{% url 'hello.views.d1' %}#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="{% url 'hello.views.d1' %}#" class="w3-bar-item w3-button">Extras</a>
+        <a href="{% url 'hello.views.d1' %}#" class="w3-bar-item w3-button">Media</a>
       </div>
     </div>
     <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
@@ -50,10 +50,10 @@ body {font-family: "Lato", sans-serif}
 
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm#band" class="w3-bar-item w3-button w3-padding-large">BAND</a>
-  <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm#tour" class="w3-bar-item w3-button w3-padding-large">TOUR</a>
-  <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
-  <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm#" class="w3-bar-item w3-button w3-padding-large">MERCH</a>
+  <a href="{% url 'hello.views.d1' %}#band" class="w3-bar-item w3-button w3-padding-large">BAND</a>
+  <a href="{% url 'hello.views.d1' %}#tour" class="w3-bar-item w3-button w3-padding-large">TOUR</a>
+  <a href="{% url 'hello.views.d1' %}#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+  <a href="{% url 'hello.views.d1' %}#" class="w3-bar-item w3-button w3-padding-large">MERCH</a>
 </div>
 
 <!-- Page content -->
@@ -163,7 +163,7 @@ body {font-family: "Lato", sans-serif}
         <input class="w3-input w3-border" type="text" placeholder="Enter email">
         <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
         <button class="w3-button w3-red w3-section" onclick="document.getElementById(&#39;ticketModal&#39;).style.display=&#39;none&#39;">Close <i class="fa fa-remove"></i></button>
-        <p class="w3-right">Need <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm#" class="w3-text-blue">help?</a></p>
+        <p class="w3-right">Need <a href="{% url 'hello.views.d1' %}#" class="w3-text-blue">help?</a></p>
       </div>
     </div>
   </div>
