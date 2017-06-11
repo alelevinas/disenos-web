@@ -25,5 +25,5 @@ def db(request):
     return render(request, 'db.html', {'greetings': greetings})
     
 def d1(request):
-	return render(request, 'd1/d1.html')
+	return render(request, 'd1/d1Template.html')
 
