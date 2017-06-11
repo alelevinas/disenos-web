@@ -35,3 +35,9 @@ def d3(request):
 
 def d4(request):
 	return render(request, 'd4.html')
+
+def d5(request):
+	return render(request, 'd5.html')
+	
+def d6(request):
+	return render(request, 'd6.html')
