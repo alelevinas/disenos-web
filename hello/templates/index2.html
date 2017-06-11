@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<title>Diseños web - Alejandro Levinas (w3.css)</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Header -->
+<header class="w3-container w3-green w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">DISEÑOS WEB</h1>
+  <p class="w3-xlarge">Alejandro Levinas</p>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+    	<ul class="w3-ul" style="width:50%">
+  			<li>
+            	<div class="w3-btn w3-green w3-hover-shadow w3-center" style="width:100%">
+    				<h3><a href="{% url 'hello.views.d1' %}#">Ver el diseño 1 </a></h3> 
+  	  			</div>
+            </li>
+            <li>
+            	<div class="w3-btn w3-green w3-hover-shadow  w3-center" style="width:100%">
+    				<h3><a href="{% url 'hello.views.d2' %}#">Ver el diseño 2 </a></h3> 
+  	  			</div>
+            </li>
+            <li>
+            	<div class="w3-btn w3-green w3-hover-shadow  w3-center" style="width:100%">
+    				<h3><a href="{% url 'hello.views.d3' %}#">Ver el diseño 3 </a></h3> 
+  	  			</div>
+            </li>
+            <li>
+            	<div class="w3-btn w3-green w3-hover-shadow  w3-center" style="width:100%">
+    				<h3><a href="{% url 'hello.views.d4' %}#">Ver el diseño 4 </a></h3> 
+  	  			</div>
+            </li>
+            <li>
+            	<div class="w3-btn w3-green w3-hover-shadow  w3-center" style="width:100%">
+    				<h3><a href="{% url 'hello.views.d5' %}#">Ver el diseño 5 </a></h3> 
+  	  			</div>
+            </li>
+            <li>
+            	<div class="w3-btn w3-green w3-hover-shadow  w3-center" style="width:100%">
+    				<h3><a href="{% url 'hello.views.d6' %}#">Ver el diseño 6 </a></h3> 
+  	  			</div>
+            </li>
+            <li>
+            	<div class="w3-btn w3-green w3-hover-shadow  w3-center" style="width:100%">
+    				<h3><a href="{% url 'hello.views.d7' %}#">Ver el diseño 7 </a></h3> 
+  	  			</div>
+            </li>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-blue"></i>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Contacto: <a href=levinasale@gmail.com>levinasale@gmail.com</a></h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+ <p>Powered by w3.css</p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

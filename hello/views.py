@@ -12,7 +12,7 @@ from .models import Greeting
     
 def index(request):
     # return HttpResponse('Hello from Python!')
-    return render(request, 'index.html')
+    return render(request, 'index2.html')
 
 
 def db(request):
