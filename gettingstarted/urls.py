@@ -19,5 +19,6 @@ urlpatterns = [
     url(r'^d4/', hello.views.d4, name='d4'),
     url(r'^d5/', hello.views.d5, name='d5'),
     url(r'^d6/', hello.views.d6, name='d6'),
-    url(r'^d7/', hello.views.d7, name='d7')
+    url(r'^d7/', hello.views.d7, name='d7'),
+    url(r'^zman/', hello.views.zman, name='zman')
 ]

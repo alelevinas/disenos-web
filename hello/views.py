@@ -44,3 +44,6 @@ def d6(request):
 
 def d7(request):
 	return render(request, 'd7.html')
+
+def zman(request):
+    return render(request, 'zman.html')

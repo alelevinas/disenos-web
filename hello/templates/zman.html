@@ -1,0 +1,158 @@
+{% load staticfiles %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<title>Diseño 2</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="{% static 'blue-anchor-md.png' %}">
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-light-grey">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block">Inicio</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#plans" class="w3-button w3-block">Planes</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block">¿Quiénes somos?</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block">Contacto</a>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+  <div class="w3-panel">
+    <h1><b>ZMAN</b></h1>
+  </div>
+
+  <!-- Grid -->
+  <div class="w3-row w3-container">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What We Offer</span>
+    </div>
+    <div class="w3-padding-64">
+        <p>En ZMAN le ofrecemos la información necesaria para ayudarlo a encontrar profesionales de la
+salud y educación de primer nivel, con experiencia laboral en el ámbito religioso.
+Psicólogos, psiquiatras, psicopedagogos, neurólogos, integradores y maestras particulares
+forman parte de ZMAN.
+Hay profesionales especializados en niños, adolescentes y adultos (para ambos sexos).
+Contamos con profesionales especializados para casos de niños con capacidades diferentes
+(estimuladores, kinesiologos, etc)
+La dirección general del servicio está a cargo del Lic. Leonardo Epsztein
+        </p>
+    </div>
+  </div>
+  
+  <!-- Grid -->
+  <div class="w3-row-padding" id="about">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">¿Quiénes somos?</span>
+    </div>
+
+    </div>
+    <div class="w3-padding-64">
+        <h2>DIRECTOR GENERAL ZMAN</h2>
+        <p>
+Lic. Leonardo Epsztein: egresado de la U.B.A. en el año 2003, con especializaciones en
+Psicología Educacional, Psicología Cognitivo/Conductual, Psicología del Deporte, Psicología
+Laboral, entre otras áreas.
+Actualmente desempeña su labor en el colegio secundario R. Iosef Caro, es el director del área
+de RRHH de Caesar Systems/Palantir Solutions y trabaja en el consultorio en el barrio de
+Once.
+También participó en los programas de admisión de Jabad (Isej) y Sucath David (Fellowship).
+El Lic. Leonardo Epsztein ha creado la técnica terapéutica que vincula al ping pong en los
+tratamientos con niños y adolescentes, obteniendo muy buenos resultados.
+        </p>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-center w3-padding-64" id="contact">
+    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
+  </div>
+
+  <form class="w3-container" action="/action_page.php" target="_blank">
+    <div class="w3-section">
+      <label>Nombre</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
+    </div>
+    <div class="w3-section">
+      <label>Email</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
+    </div>
+    <div class="w3-section">
+      <label>Asunto</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
+    </div>
+    <div class="w3-section">
+      <label>Mensaje</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%; height:170px" name="Message" required>
+    </div>
+    <button type="submit" class="w3-button w3-block w3-black">Enviar</button>
+  </form>
+
+</div>
+
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <h4>Footer</h4>
+  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>Inicio</a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
+
+{% endblock %}
